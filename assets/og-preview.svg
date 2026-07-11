@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#021620"/>
+<circle cx="910" cy="160" r="420" fill="none" stroke="#d6a65c" stroke-opacity=".22" stroke-width="3"/>
+<rect x="100" y="135" width="5" height="210" fill="#e85c26"/>
+<text x="130" y="205" fill="#f5eee5" font-family="Arial" font-weight="700" font-size="68">СНАЧАЛА</text>
+<text x="130" y="288" fill="#f5eee5" font-family="Arial" font-weight="300" font-size="76" letter-spacing="14">БОЛЬНО</text>
+<text x="135" y="340" fill="#d6a65c" font-family="Arial" font-size="25" letter-spacing="9">МАССАЖ И ВОССТАНОВЛЕНИЕ ТЕЛА</text>
+<text x="100" y="470" fill="#f5eee5" font-family="Arial" font-weight="700" font-size="54">Массаж во Владивостоке</text>
+</svg>
