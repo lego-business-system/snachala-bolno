@@ -140,3 +140,28 @@ a{color:inherit}.container{width:min(1180px,calc(100% - 40px));margin:0 auto}
     transform:none;
   }
 }
+
+
+/* V5: footer, contacts and certificates */
+.footer-grid-v5{grid-template-columns:.85fr 1fr 1.35fr;align-items:start}
+.footer-brand-v5 .brand-lockup{margin-bottom:0}
+.footer-links span{color:rgba(244,236,226,.72);line-height:1.5}
+.channel-placeholder{opacity:.56;font-size:14px}
+.footer-business-v5{display:flex;flex-wrap:wrap;gap:8px 24px;padding:22px 0 10px;border-top:1px solid rgba(244,236,226,.08);color:rgba(244,236,226,.43);font-size:12px;line-height:1.55}
+.footer-bottom{margin-top:12px}
+.certificate-format-copy{margin-top:-8px!important;color:rgba(244,236,226,.72)!important}
+.certificate-options-card{padding:30px 32px;border:1px solid rgba(227,103,63,.52);border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015)),rgba(5,27,38,.72);box-shadow:0 28px 75px rgba(0,0,0,.28)}
+.certificate-options-card h2{margin:0 0 18px;font-size:30px}
+.certificate-options-card ul{margin:0;padding-left:22px;color:rgba(244,236,226,.78);font-size:18px;line-height:1.75}
+.certificate-showcase-v5{max-width:800px;grid-template-columns:repeat(2,minmax(0,340px));justify-content:center;gap:34px}
+.certificate-showcase-v5 .certificate-card{padding:14px}
+.certificate-showcase-v5 .certificate-card img{width:100%;height:auto;max-height:510px;object-fit:contain}
+.certificate-info-grid{max-width:900px}
+.quick-contact-list{display:grid;gap:12px;margin-top:20px}
+.quick-contact-list>a,.contact-placeholder{display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-bottom:1px solid rgba(244,236,226,.1);text-decoration:none;color:rgba(244,236,226,.78)}
+.quick-contact-list strong{color:var(--milk)}
+.quick-contact-list a:hover span{color:var(--champagne)}
+.contact-placeholder{opacity:.56}
+.official-info-section{padding-top:0}
+.official-info-card{display:flex;flex-wrap:wrap;gap:8px 22px;padding:18px 22px;border:1px solid rgba(244,236,226,.08);border-radius:18px;color:rgba(244,236,226,.42);font-size:12px;line-height:1.55}
+@media(max-width:920px){.footer-grid-v5{grid-template-columns:1fr}.certificate-showcase-v5{grid-template-columns:1fr;max-width:380px}.certificate-hero-grid-v5{grid-template-columns:1fr}.footer-business-v5{flex-direction:column}.quick-contact-list>a,.contact-placeholder{flex-direction:column;gap:4px}}
