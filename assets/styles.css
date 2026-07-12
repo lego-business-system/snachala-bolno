@@ -148,3 +148,329 @@ details p{margin:16px 0 0; font-size:17px}
   .hero-actions{flex-direction:column}
   .btn{width:100%}
 }
+
+
+/* ==========================================================
+   BRAND UPDATE V2 — единая айдентика «СНАЧАЛА БОЛЬНО»
+   Фон и логотип взяты из утверждённого референса бренда.
+   ========================================================== */
+
+:root{
+  --navy:#041822;
+  --navy-2:#06202b;
+  --navy-deep:#020f16;
+  --milk:#f4ece2;
+  --muted:#d0c5b8;
+  --champagne:#da9c47;
+  --terracotta:#e3673f;
+  --line:rgba(227,103,63,.62);
+  --card:rgba(7,31,42,.78);
+  --card-2:rgba(255,255,255,.042);
+  --shadow:0 26px 85px rgba(0,0,0,.36);
+}
+
+html{
+  background:#041822;
+}
+
+body{
+  min-height:100vh;
+  isolation:isolate;
+  background:#041822;
+  color:var(--milk);
+}
+
+/* Точная мягкая фактура из утверждённого изображения */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-3;
+  pointer-events:none;
+  opacity:.82;
+  background:
+    linear-gradient(180deg,rgba(4,24,34,.18),rgba(4,24,34,.48)),
+    url("brand-texture.jpg") center / cover no-repeat;
+  mix-blend-mode:normal;
+}
+
+/* Фирменная большая окружность */
+body::after{
+  content:"";
+  position:fixed;
+  z-index:-2;
+  pointer-events:none;
+  width:min(1380px,112vw);
+  aspect-ratio:1;
+  left:50%;
+  top:-390px;
+  transform:translateX(-50%);
+  border:2px solid rgba(159,116,71,.22);
+  border-radius:50%;
+  filter:drop-shadow(0 0 30px rgba(0,0,0,.12));
+}
+
+.site-header{
+  background:rgba(4,24,34,.91);
+  border-bottom:1px solid rgba(218,156,71,.17);
+  box-shadow:0 12px 38px rgba(0,0,0,.16);
+  backdrop-filter:blur(22px) saturate(115%);
+}
+
+.header-inner{
+  height:104px;
+  gap:30px;
+}
+
+/* Один точный графический логотип на всех страницах */
+.brand-lockup{
+  display:block;
+  width:246px;
+  height:94px;
+  min-width:246px;
+  flex:0 0 246px;
+  background:url("brand-logo.png") left center / contain no-repeat;
+  text-decoration:none;
+  filter:drop-shadow(0 5px 15px rgba(0,0,0,.14));
+}
+.brand-lockup .brand-line,
+.brand-lockup .brand-text{
+  display:none !important;
+}
+
+.nav{
+  gap:24px;
+}
+
+.nav a{
+  position:relative;
+  padding:13px 0;
+  font-size:14px;
+  font-weight:560;
+  letter-spacing:.01em;
+  color:rgba(244,236,226,.79);
+}
+.nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:100%;
+  bottom:6px;
+  height:1px;
+  background:var(--champagne);
+  transition:right .22s ease;
+}
+.nav a:hover::after,
+.nav a.active::after{
+  right:0;
+}
+.nav a:hover,
+.nav a.active{
+  color:var(--champagne);
+}
+
+.header-cta,
+.btn{
+  min-height:48px;
+  padding:13px 22px;
+  border-color:rgba(227,103,63,.82);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.025);
+}
+.header-cta{
+  color:var(--champagne);
+}
+.header-cta:hover,
+.btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 15px 35px rgba(0,0,0,.28);
+}
+.btn.primary{
+  background:linear-gradient(135deg,#eb6b40,#dd572f);
+  color:#160b06;
+}
+.btn.secondary{
+  background:rgba(255,255,255,.018);
+  border-color:rgba(244,236,226,.3);
+}
+
+.hero,
+.page-hero{
+  background:
+    radial-gradient(circle at 77% 18%,rgba(218,156,71,.065),transparent 26%),
+    linear-gradient(180deg,rgba(4,24,34,.28),rgba(4,24,34,.05));
+}
+
+.hero{
+  padding:110px 0 95px;
+}
+
+.hero:after,
+.page-hero:after{
+  width:1100px;
+  height:1100px;
+  right:-380px;
+  top:-300px;
+  border-color:rgba(174,128,76,.2);
+  border-width:2px;
+}
+
+h1{
+  color:var(--milk);
+  font-weight:760;
+  letter-spacing:-.025em;
+  text-wrap:balance;
+  text-shadow:0 2px 24px rgba(0,0,0,.12);
+}
+h2,h3{
+  color:var(--milk);
+}
+.hero-kicker,
+.eyebrow{
+  color:var(--champagne);
+  font-weight:650;
+}
+
+.hero-panel,
+.content-card,
+.service-card,
+.branch-card,
+.price-card,
+.cta-box,
+details{
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015)),
+    rgba(5,27,38,.72);
+  border-color:rgba(227,103,63,.52);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.035),
+    0 28px 75px rgba(0,0,0,.28);
+  backdrop-filter:blur(10px);
+  transition:
+    transform .24s ease,
+    border-color .24s ease,
+    box-shadow .24s ease,
+    background .24s ease;
+}
+
+.service-card:hover,
+.branch-card:hover,
+.price-card:hover,
+.content-card:hover{
+  transform:translateY(-6px);
+  border-color:rgba(218,156,71,.74);
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.02)),
+    rgba(5,29,41,.82);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.05),
+    0 34px 90px rgba(0,0,0,.38);
+}
+
+.service-card a,
+.text-link,
+.branch-card a{
+  color:var(--champagne);
+  transition:color .2s ease, letter-spacing .2s ease;
+}
+.service-card a:hover,
+.text-link:hover,
+.branch-card a:hover{
+  color:#f0bc70;
+  letter-spacing:.02em;
+}
+
+.choice-list a{
+  border-bottom-color:rgba(244,236,226,.12);
+  transition:padding-left .2s ease, background .2s ease;
+}
+.choice-list a:hover{
+  padding-left:10px;
+  background:linear-gradient(90deg,rgba(227,103,63,.055),transparent);
+}
+
+.price-row{
+  border-bottom-color:rgba(244,236,226,.14);
+}
+
+.section{
+  position:relative;
+}
+
+.cta-section{
+  background:linear-gradient(180deg,transparent,rgba(0,0,0,.07));
+}
+
+.site-footer{
+  background:rgba(2,16,23,.44);
+  border-top-color:rgba(218,156,71,.16);
+  backdrop-filter:blur(12px);
+}
+
+.site-footer .brand-lockup{
+  width:310px;
+  height:144px;
+  min-width:310px;
+  background-position:left top;
+}
+
+.footer-links a{
+  transition:color .2s ease, transform .2s ease;
+}
+.footer-links a:hover{
+  color:var(--champagne);
+  transform:translateX(3px);
+}
+
+@media(max-width:1060px){
+  .brand-lockup{
+    width:205px;
+    height:82px;
+    min-width:205px;
+    flex-basis:205px;
+  }
+  .nav{
+    gap:16px;
+  }
+}
+
+@media(max-width:920px){
+  .header-inner{
+    height:92px;
+  }
+  .brand-lockup{
+    width:205px;
+    height:78px;
+    min-width:205px;
+  }
+  .nav.open{
+    top:92px;
+    background:rgba(4,24,34,.98);
+    border-color:rgba(227,103,63,.58);
+    box-shadow:0 28px 70px rgba(0,0,0,.42);
+  }
+  body::after{
+    width:1150px;
+    top:-350px;
+  }
+}
+
+@media(max-width:520px){
+  .header-inner{
+    height:82px;
+  }
+  .brand-lockup{
+    width:166px;
+    height:68px;
+    min-width:166px;
+    flex-basis:166px;
+  }
+  .site-footer .brand-lockup{
+    width:245px;
+    height:112px;
+    min-width:245px;
+  }
+  body::after{
+    width:920px;
+    top:-270px;
+  }
+}

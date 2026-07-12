@@ -1,0 +1,15 @@
+ОБНОВЛЕНИЕ V2
+
+Самый простой способ:
+1. Распакуйте site_v2.zip.
+2. Откройте репозиторий GitHub snachala-bolno.
+3. Add file → Upload files.
+4. Перетащите ВСЁ содержимое распакованной папки в корень репозитория.
+5. Нажмите Commit changes.
+6. Подождите 1–3 минуты и обновите сайт с очисткой кэша: Ctrl+Shift+R / Cmd+Shift+R.
+
+Либо замените только файлы в папке assets:
+- styles.css
+- brand-logo.png
+- brand-texture.jpg
+- og-preview.png
