@@ -23,3 +23,120 @@ a{color:inherit}.container{width:min(1180px,calc(100% - 40px));margin:0 auto}
 @media(max-width:1040px){.nav{gap:15px}.nav a{font-size:13px}.brand-lockup{width:205px;min-width:205px}.service-hero-grid{grid-template-columns:1fr .8fr}.service-visual img{height:540px}}
 @media(max-width:920px){.nav,.header-cta{display:none}.burger{display:flex;margin-left:auto}.header-inner{height:92px}.brand-lockup{width:205px;min-width:205px}.nav.open{display:flex;position:absolute;left:20px;right:20px;top:92px;padding:20px;border:1px solid rgba(227,103,63,.58);border-radius:22px;background:rgba(4,24,34,.98);box-shadow:0 28px 70px rgba(0,0,0,.42);flex-direction:column;align-items:flex-start}.hero-grid,.split-grid,.price-highlight,.service-hero-grid,.price-hero-grid,.content-grid,.content-grid.three,.pricing-grid,.pricing-grid.two,.branch-grid,.contact-grid{grid-template-columns:1fr}.cards-grid{grid-template-columns:repeat(2,1fr)}.service-visual{max-width:620px}.service-visual img{height:auto}.service-facts{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.hero{padding-top:65px}}
 @media(max-width:620px){.container{width:min(100% - 28px,1180px)}.header-inner{height:82px}.brand-lockup{width:166px;min-width:166px}.cards-grid,.related-grid{grid-template-columns:1fr}.service-card-media{height:260px}h1{font-size:41px}.hero-actions{flex-direction:column}.btn{width:100%}.choice-list a{flex-direction:column;gap:4px}.choice-list span{text-align:left}.site-footer .brand-lockup{width:245px}.service-hero-grid{gap:34px}.content-intro p{font-size:18px}.price-row{font-size:16px}.lightbox{padding:10px}.lightbox-close{right:12px;top:10px}}
+
+
+/* ==========================================================
+   V4 — чистая айдентика, сертификаты, лаконичные тексты
+   ========================================================== */
+
+.service-card-meta.only-link{
+  justify-content:flex-end;
+}
+.service-card-meta.only-link .card-link{
+  margin-left:auto;
+}
+
+.centered-head{
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+.price-preview-section{
+  padding-top:82px;
+}
+.price-poster-wide{
+  max-width:1160px;
+  margin:0 auto;
+}
+.price-poster-wide .price-poster{
+  border-radius:32px;
+}
+.single-card-grid{
+  grid-template-columns:minmax(0,760px) !important;
+  justify-content:center;
+}
+
+.certificate-hero-grid{
+  display:grid;
+  grid-template-columns:1fr .56fr;
+  gap:52px;
+  align-items:center;
+}
+.certificate-summary{
+  border-left:4px solid var(--terracotta);
+  padding:28px 0 28px 30px;
+}
+.certificate-summary strong{
+  display:block;
+  font-size:22px;
+  line-height:1.55;
+  color:var(--milk);
+}
+.certificate-showcase{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:34px;
+  align-items:start;
+  max-width:980px;
+}
+.certificate-card{
+  margin:0;
+  padding:18px;
+  border:1px solid rgba(227,103,63,.52);
+  border-radius:30px;
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.014)),
+    rgba(5,27,38,.72);
+  box-shadow:0 30px 88px rgba(0,0,0,.35);
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.certificate-card:first-child{
+  transform:rotate(-1.2deg);
+}
+.certificate-card:last-child{
+  transform:rotate(1.2deg);
+}
+.certificate-card:hover{
+  transform:translateY(-7px) rotate(0);
+  border-color:rgba(218,156,71,.8);
+  box-shadow:0 38px 100px rgba(0,0,0,.44);
+}
+.certificate-card a{
+  display:block;
+  overflow:hidden;
+  border-radius:20px;
+  cursor:zoom-in;
+}
+.certificate-card img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.certificate-card figcaption{
+  padding:16px 6px 2px;
+  color:var(--champagne);
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  text-align:center;
+}
+.certificate-note{
+  margin-top:28px;
+  color:rgba(244,236,226,.68);
+  font-size:15px;
+  text-align:center;
+}
+
+@media(max-width:920px){
+  .certificate-hero-grid{
+    grid-template-columns:1fr;
+  }
+  .certificate-showcase{
+    grid-template-columns:1fr;
+    max-width:620px;
+  }
+  .certificate-card:first-child,
+  .certificate-card:last-child{
+    transform:none;
+  }
+}
