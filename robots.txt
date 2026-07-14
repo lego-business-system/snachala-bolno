@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://snachala-bolno.ru/sitemap.xml
